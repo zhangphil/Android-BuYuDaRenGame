@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <group>
+  <item android:id="@+id/start" android:title="Start" android:icon="@drawable/start"></item>
+  <item android:id="@+id/set" android:title="Set" android:icon="@drawable/set"></item>
+  <item android:id="@+id/help" android:title="Help" android:icon="@drawable/help"></item>
+  </group>
+  <group>
+  <item android:id="@+id/help_back" android:title="Back" android:icon="@drawable/help_back"></item>
+  </group>
+</menu>

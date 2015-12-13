@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/aboutus">
+	<ImageButton 
+	    android:src="@drawable/help_back" 
+	    android:id="@+id/about_back" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:background="#00000000" 
+	    >
+    </ImageButton>
+    <ScrollView 
+    	android:id="@+id/about"
+        android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/about_back"
+		android:scrollbars="none">
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/about" 
+			android:src="@drawable/about"		
+			android:scaleType="center">"
+		</ImageView>
+	</ScrollView>
+	<ImageView 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:id="@+id/about_under" 
+		android:src="@drawable/about_under" 
+		android:layout_alignParentBottom="true" >
+	</ImageView>
+</RelativeLayout>

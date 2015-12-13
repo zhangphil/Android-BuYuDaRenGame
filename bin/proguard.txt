@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:23
+-keep class fishjoy.control.about.About { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class fishjoy.control.billboard.Billboard { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class fishjoy.control.game.FishJoy { <init>(...); }
+
+# view AndroidManifest.xml #generated:11
+-keep class fishjoy.control.help.Help { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class fishjoy.control.menu.MainMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class fishjoy.control.menu.SubMenuForGame { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class fishjoy.control.systemsetting.Systemsetting { <init>(...); }
+

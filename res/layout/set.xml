@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+    <ImageButton 
+	    android:src="@drawable/help_back" 
+	    android:id="@+id/set_back" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:background="#00000000">
+    </ImageButton>  
+    <ImageView 
+	    android:id="@+id/music_image" 
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/music" 
+	    android:layout_width="wrap_content" 
+	    android:layout_above="@+id/sound_image" 
+	    android:layout_alignRight="@+id/set_back" 
+	    android:layout_marginRight="33dp" 
+	    android:layout_marginBottom="16dp">
+    </ImageView>
+    <SeekBar 
+	    android:layout_height="wrap_content" 
+	    android:max="100" android:id="@+id/music" 
+	    android:layout_width="365dp" 
+	    android:progress="50" 
+	    android:layout_alignBottom="@+id/music_image" 
+	    android:layout_toLeftOf="@+id/sound_value">
+    </SeekBar>
+    <TextView 
+	    android:id="@+id/music_value" 
+	    android:layout_height="wrap_content" 
+	    android:layout_width="wrap_content" 
+	    android:layout_alignTop="@+id/music" 
+	    android:layout_alignLeft="@+id/sound_value">
+    </TextView> 
+    <ImageView 
+	    android:id="@+id/sound_image" 
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/sound" 
+	    android:layout_width="wrap_content" 
+	    android:layout_centerVertical="true" 
+	    android:layout_alignLeft="@+id/music_image">
+    </ImageView>
+     
+	<SeekBar android:id="@+id/sound"
+	    android:layout_height="wrap_content"
+		android:max="100"
+		android:progress="50"
+		android:layout_width="365dp"
+		android:layout_below="@+id/music_image" 
+		android:layout_toRightOf="@id/sound_image"
+	/>
+	
+    <TextView android:id="@+id/sound_value"
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/sound"
+        android:layout_below="@+id/music_image" 
+    />
+
+</RelativeLayout>
